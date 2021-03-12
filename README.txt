@@ -2,10 +2,11 @@
 Tên đề tài: Ứng dụng điểm danh trong lớp học
 Nhóm thực hiện: Nhóm 02
 Danh sách các yêu cầu của đề tài:
-STT				            Yêu cầu						                                                                    Giải thích
- 1				           Đăng nhập		                                              Mỗi giảng viên cần có 1 tài khoản để truy cập vào từng lớp học của mình 
-							                                                                  (Mở rộng sinh viên cũng có tài khoản để có thể tự điểm danh của mình vào 
-							                                                                  tiết học ngày hôm đó, có sự giám sát và xác nhận của giáo viên).
+STT			Yêu cầu						               				Giải thích
+
+ 1		       Đăng nhập		                		Mỗi giảng viên cần có 1 tài khoản để truy cập vào từng lớp học của mình 
+							                        (Mở rộng sinh viên cũng có tài khoản để có thể tự điểm danh của mình vào 
+							                        tiết học ngày hôm đó, có sự giám sát và xác nhận của giáo viên).
                                                                                 
  2          Cập nhật thông tin sinh viên                                        Thêm tên, mssv, hình ảnh cho từng sinh viên trong lớp học
  
