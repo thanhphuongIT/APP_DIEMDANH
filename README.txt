@@ -2,7 +2,7 @@
 Tên đề tài: Ứng dụng điểm danh trong lớp học
 Nhóm thực hiện: Nhóm 02
 Danh sách các yêu cầu của đề tài:
-STT			Yêu cầu						               				Giải thích
+STT			YÊU CẦU						               				GIẢI THÍCH
 
  1		       Đăng nhập		                		Mỗi giảng viên cần có 1 tài khoản để truy cập vào từng lớp học của mình 
 							                        (Mở rộng sinh viên cũng có tài khoản để có thể tự điểm danh của mình vào 
