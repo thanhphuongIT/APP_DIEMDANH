@@ -20,6 +20,8 @@ Danh sách các yêu cầu của đề tài:
 4.
 - Yêu cầu: Chia danh sách sinh viên theo từng môn học.
 - Giải thích: Mỗi giảng viên sẽ dạy nhiều môn học theo nhiều khung giờ khác nhau, nên phân danh sách sinh viên theo từng môn sẽ dễ quản lý hơn.
+- Input: Nhập vào bảng đăng kí môn học của từng sinh viên.
+- Output: Danh sách sinh viên theo từng môn học.
 5. 
 - Yêu cầu: Điểm danh bằng cách sử dụng camera để quét mã vạch, hoặc khuôn mặt.
 - Giải thích: Để tránh mất thời gian và nhầm lẫn thì nên để từng sinh viên đi ngang qua camera trước khi ra khỏi lớp sẽ có độ chính xác cao hơn.
