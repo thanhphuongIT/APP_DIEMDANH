@@ -1,0 +1,194 @@
+[
+    {
+        "merged": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher_background.png.flat",
+        "source": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher_background.png.flat",
+        "source": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable_search.jpg.flat",
+        "source": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\src\\main\\res\\drawable\\search.jpg"
+    },
+    {
+        "merged": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\intermediates\\res\\merged\\debug\\layout_acctivity_main_teacher.xml.flat",
+        "source": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\src\\main\\res\\layout\\acctivity_main_teacher.xml"
+    },
+    {
+        "merged": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable_backimagebotton.png.flat",
+        "source": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\src\\main\\res\\drawable\\backimagebotton.png"
+    },
+    {
+        "merged": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable_schedule_cong.png.flat",
+        "source": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\src\\main\\res\\drawable\\schedule_cong.png"
+    },
+    {
+        "merged": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_eye.png.flat",
+        "source": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\src\\main\\res\\drawable\\ic_eye.png"
+    },
+    {
+        "merged": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable_present.jpg.flat",
+        "source": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\src\\main\\res\\drawable\\present.jpg"
+    },
+    {
+        "merged": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\intermediates\\res\\merged\\debug\\font_rubik_medium.xml.flat",
+        "source": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\src\\main\\res\\font\\rubik_medium.xml"
+    },
+    {
+        "merged": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable_image_top.png.flat",
+        "source": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\src\\main\\res\\drawable\\image_top.png"
+    },
+    {
+        "merged": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable_input_bg.xml.flat",
+        "source": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\src\\main\\res\\drawable\\input_bg.xml"
+    },
+    {
+        "merged": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable_studentlist.jpg.flat",
+        "source": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\src\\main\\res\\drawable\\studentlist.jpg"
+    },
+    {
+        "merged": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_launcher_background.png.flat",
+        "source": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main_student.xml.flat",
+        "source": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\src\\main\\res\\layout\\activity_main_student.xml"
+    },
+    {
+        "merged": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable_persion_bg.xml.flat",
+        "source": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\src\\main\\res\\drawable\\persion_bg.xml"
+    },
+    {
+        "merged": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\intermediates\\res\\merged\\debug\\layout_acctivity_main_admin.xml.flat",
+        "source": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\src\\main\\res\\layout\\acctivity_main_admin.xml"
+    },
+    {
+        "merged": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_schedule.xml.flat",
+        "source": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\src\\main\\res\\drawable\\btn_schedule.xml"
+    },
+    {
+        "merged": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_vn.png.flat",
+        "source": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\src\\main\\res\\drawable\\ic_vn.png"
+    },
+    {
+        "merged": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable_statistical.jpg.flat",
+        "source": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\src\\main\\res\\drawable\\statistical.jpg"
+    },
+    {
+        "merged": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable_classlist.jpg.flat",
+        "source": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\src\\main\\res\\drawable\\classlist.jpg"
+    },
+    {
+        "merged": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_launcher_background.xml.flat",
+        "source": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable_schedule.jpg.flat",
+        "source": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\src\\main\\res\\drawable\\schedule.jpg"
+    },
+    {
+        "merged": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_launcher_background.png.flat",
+        "source": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable_attendance.jpg.flat",
+        "source": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\src\\main\\res\\drawable\\attendance.jpg"
+    },
+    {
+        "merged": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_logo.png.flat",
+        "source": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\src\\main\\res\\drawable\\ic_logo.png"
+    },
+    {
+        "merged": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable_image_mid.png.flat",
+        "source": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\src\\main\\res\\drawable\\image_mid.png"
+    },
+    {
+        "merged": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable_absent.jpg.flat",
+        "source": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\src\\main\\res\\drawable\\absent.jpg"
+    },
+    {
+        "merged": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable_information.jpg.flat",
+        "source": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\src\\main\\res\\drawable\\information.jpg"
+    },
+    {
+        "merged": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\intermediates\\res\\merged\\debug\\font_rubik.xml.flat",
+        "source": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\src\\main\\res\\font\\rubik.xml"
+    },
+    {
+        "merged": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_bg.xml.flat",
+        "source": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\src\\main\\res\\drawable\\btn_bg.xml"
+    },
+    {
+        "merged": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_login.xml.flat",
+        "source": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\intermediates\\res\\merged\\debug\\font_poppins.xml.flat",
+        "source": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\src\\main\\res\\font\\poppins.xml"
+    },
+    {
+        "merged": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\intermediates\\res\\merged\\debug\\font_poppins_medium.xml.flat",
+        "source": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\src\\main\\res\\font\\poppins_medium.xml"
+    },
+    {
+        "merged": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher_background.png.flat",
+        "source": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher_background.png.flat",
+        "source": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_launcher_background.png"
+    }
+]
