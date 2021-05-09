@@ -44,6 +44,10 @@
         "source": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\src\\main\\res\\font\\rubik_medium.xml"
     },
     {
+        "merged": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_forgot_password.xml.flat",
+        "source": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\src\\main\\res\\layout\\activity_forgot_password.xml"
+    },
+    {
         "merged": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable_image_top.png.flat",
         "source": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\src\\main\\res\\drawable\\image_top.png"
     },
@@ -80,6 +84,10 @@
         "source": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
+        "merged": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\intermediates\\res\\merged\\debug\\layout_acctivity_attendence_student.xml.flat",
+        "source": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\src\\main\\res\\layout\\acctivity_attendence_student.xml"
+    },
+    {
         "merged": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable_persion_bg.xml.flat",
         "source": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\src\\main\\res\\drawable\\persion_bg.xml"
     },
@@ -100,12 +108,12 @@
         "source": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_vn.png.flat",
-        "source": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\src\\main\\res\\drawable\\ic_vn.png"
-    },
-    {
         "merged": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
         "source": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_vn.png.flat",
+        "source": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\src\\main\\res\\drawable\\ic_vn.png"
     },
     {
         "merged": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\intermediates\\res\\merged\\debug\\drawable_statistical.jpg.flat",
@@ -170,6 +178,10 @@
     {
         "merged": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\intermediates\\res\\merged\\debug\\font_poppins.xml.flat",
         "source": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\src\\main\\res\\font\\poppins.xml"
+    },
+    {
+        "merged": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\intermediates\\res\\merged\\debug\\xml_network_security_config.xml.flat",
+        "source": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\src\\main\\res\\xml\\network_security_config.xml"
     },
     {
         "merged": "D:\\THANHPHUONG\\DEVMOBILE\\App_Diemdanh\\Code\\app\\build\\intermediates\\res\\merged\\debug\\font_poppins_medium.xml.flat",

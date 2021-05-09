@@ -86,7 +86,7 @@ public class UserModel extends AppCompatActivity implements IUser {
 
     @Override
     public void checkUserValidity(ILoginView context) {
-        String url = "http://192.168.1.3/student_attendence/getdata.php";
+        String url = "http://192.168.1.12/student_attendence/getdata.php";
         RequestQueue requestQueue = Volley.newRequestQueue((Context) context);
        // requestQueue.start();
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {

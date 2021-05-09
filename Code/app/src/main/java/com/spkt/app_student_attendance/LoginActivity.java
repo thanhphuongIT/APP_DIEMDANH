@@ -6,16 +6,18 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.spkt.app_student_attendance.presenter.ILoginPresenter;
 import com.spkt.app_student_attendance.presenter.LoginPresenter;
 import com.spkt.app_student_attendance.view.ILoginView;
+
 public class LoginActivity extends AppCompatActivity implements ILoginView, View.OnClickListener {
     private EditText edt_user,edt_password;
     private Button btn_login;
+    private TextView btn_text_forgot;
     private ILoginPresenter loginPresenter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,13 +31,17 @@ public class LoginActivity extends AppCompatActivity implements ILoginView, View
         loginPresenter = new LoginPresenter(this);
         //Set Listener
         btn_login.setOnClickListener(this);
+        btn_text_forgot.setOnClickListener(this);
     }
     @Override
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.btn_login:
-                btn_login.setEnabled(false);
+                //btn_login.setEnabled(false);
                 loginPresenter.doLogin(edt_user.getText().toString().trim(), edt_password.getText().toString().trim(),this);
+                break;
+            case R.id.btn_text_forgot:
+                startActivity(new Intent(LoginActivity.this, Forgotpassword.class));
                 break;
         }
     }
@@ -64,6 +70,7 @@ public class LoginActivity extends AppCompatActivity implements ILoginView, View
         edt_user = (EditText) findViewById(R.id.edt_username);
         edt_password = (EditText) findViewById((R.id.edt_password));
         btn_login = (Button) findViewById(R.id.btn_login);
+        btn_text_forgot = (TextView) findViewById(R.id.btn_text_forgot);
     }
 
 

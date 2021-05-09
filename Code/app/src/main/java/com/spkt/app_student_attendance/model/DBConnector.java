@@ -8,7 +8,7 @@ import java.sql.SQLException;
 
  public class DBConnector {
     private static final String DATABASE_DRIVER = "com.mysql.cj.jdbc.Driver";
-    private static final String DATABASE_URL = "jdbc:mysql://192.168.1.14:3306/student_attendence";
+    private static final String DATABASE_URL = "jdbc:mysql://192.168.43.148:3306/student_attendence";
     private static final String USERNAME = "root";
     private static final String PASSWORD = "1234567890";
     //init connection object

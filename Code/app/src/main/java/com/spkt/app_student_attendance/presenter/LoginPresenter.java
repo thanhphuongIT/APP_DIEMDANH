@@ -32,27 +32,5 @@ public class LoginPresenter extends AppCompatActivity implements ILoginPresenter
     public void doLogin(String user, String password, ILoginView loginView) {
         initUser(user,password, loginView);
         userlogin.checkUserValidity(loginView);
-//      Toast.makeText(this, userlogin.getResults().toString(), Toast.LENGTH_LONG).show();
     }
-
-
-//    @Override
-//    public void onActivityResult(int requestCode, int resultCode, Intent data) {
-//        Toast.makeText(this, "m co vo day ko", Toast.LENGTH_LONG).show();
-//        super.onActivityResult(requestCode, resultCode, data);
-//        // kiểm tra
-//        if (requestCode == REQUEST_CODE) {
-//            // RESULT_OK chỉ ra rằng kết quả này đã thành công
-//            if (resultCode == Activity.RESULT_OK) {
-//                // Nhận dữ liệu từ Intent trả về
-//                final String result = data.getStringExtra("key");
-//                // Sử dụng kết quả result bằng cách hiện Toast
-//                Toast.makeText(this, "Result: " + result, Toast.LENGTH_LONG).show();
-//            } else {
-//
-//                // DetailActivity không thành công, không có data trả về.
-//            }
-//        }
-//    }
-
 }

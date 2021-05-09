@@ -5,7 +5,7 @@
 5    android:versionName="1.0" >
 6
 7    <uses-sdk
-8        android:minSdkVersion="16"
+8        android:minSdkVersion="19"
 8-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="30" />
 9-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml
@@ -13,74 +13,121 @@
 11    <uses-permission android:name="android.permission.INTERNET" />
 11-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:4:5-66
 11-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:4:22-64
-12
-13    <application
-13-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:6:5-34:19
-14        android:allowBackup="true"
-14-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:7:9-35
-15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-15-->[androidx.core:core:1.3.1] C:\Users\thanh\.gradle\caches\transforms-2\files-2.1\b234a824af7fd98a5c54fc0522824a91\core-1.3.1\AndroidManifest.xml:24:18-86
-16        android:debuggable="true"
-17        android:icon="@mipmap/ic_launcher"
-17-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:8:9-43
-18        android:label="@string/app_name"
-18-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:9:9-41
-19        android:requestLegacyExternalStorage="true"
-19-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:12:9-52
-20        android:roundIcon="@mipmap/ic_launcher_round"
-20-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:10:9-54
-21        android:supportsRtl="true"
+12    <uses-permission android:name="android.permission.CALL_PHONE" />
+12-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:5:5-69
+12-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:5:22-66
+13    <uses-permission android:name="android.permission.CAMERA" />
+13-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:6:5-65
+13-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:6:22-62
+14    <uses-permission
+14-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:7:5-86
+15        android:name="org.apache.http.legacy"
+15-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:7:22-59
+16        android:required="false" />
+16-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:7:60-84
+17
+18    <uses-feature android:name="android.hardware.camera" />
+18-->[info.androidhive:barcode-reader:1.1.2] C:\Users\thanh\.gradle\caches\transforms-2\files-2.1\a5eb9825b029d14c42daecc8aeb05171\jetified-barcode-reader-1.1.2\AndroidManifest.xml:13:5-60
+18-->[info.androidhive:barcode-reader:1.1.2] C:\Users\thanh\.gradle\caches\transforms-2\files-2.1\a5eb9825b029d14c42daecc8aeb05171\jetified-barcode-reader-1.1.2\AndroidManifest.xml:13:19-57
+19
+20    <application
+20-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:9:5-44:19
+21        android:allowBackup="true"
 21-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:11:9-35
-22        android:testOnly="true"
-23        android:theme="@style/Theme.App_student_attendance"
-23-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:14:9-60
-24        android:usesCleartextTraffic="true" >
-24-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:13:9-44
-25        <activity
-25-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:15:9-24:20
-26            android:name="com.spkt.app_student_attendance.LoginActivity"
-26-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:15:19-48
-27            android:theme="@style/Theme.Design.Light.NoActionBar" >
-27-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:16:13-66
-28            <intent-filter>
-28-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:17:13-20:29
-29                <action android:name="android.intent.action.MAIN" />
-29-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:18:17-69
-29-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:18:25-66
-30
-31                <category android:name="android.intent.category.LAUNCHER" />
-31-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:19:17-77
-31-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:19:27-74
-32            </intent-filter>
-33
-34            <meta-data
-34-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:21:13-23:61
-35                android:name="preloaded_fonts"
-35-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:22:17-47
-36                android:resource="@array/preloaded_fonts" />
-36-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:23:17-58
-37        </activity>
-38        <activity
-38-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:25:9-27:20
-39            android:name="com.spkt.app_student_attendance.StudentActivity"
-39-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:25:19-50
-40            android:theme="@style/Theme.Design.Light.NoActionBar" >
-40-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:26:13-66
-41        </activity>
-42        <activity
-42-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:28:9-30:20
-43            android:name="com.spkt.app_student_attendance.AdminActivity"
-43-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:28:19-48
-44            android:theme="@style/Theme.Design.Light.NoActionBar" >
-44-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:29:13-66
+22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+22-->[androidx.core:core:1.3.1] C:\Users\thanh\.gradle\caches\transforms-2\files-2.1\b234a824af7fd98a5c54fc0522824a91\core-1.3.1\AndroidManifest.xml:24:18-86
+23        android:debuggable="true"
+24        android:icon="@mipmap/ic_launcher"
+24-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:12:9-43
+25        android:label="@string/app_name"
+25-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:13:9-41
+26        android:networkSecurityConfig="@xml/network_security_config"
+26-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:10:9-69
+27        android:requestLegacyExternalStorage="true"
+27-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:16:9-52
+28        android:roundIcon="@mipmap/ic_launcher_round"
+28-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:14:9-54
+29        android:supportsRtl="true"
+29-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:15:9-35
+30        android:testOnly="true"
+31        android:theme="@style/Theme.App_student_attendance"
+31-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:18:9-60
+32        android:usesCleartextTraffic="true" >
+32-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:17:9-44
+33        <activity
+33-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:19:9-28:20
+34            android:name="com.spkt.app_student_attendance.LoginActivity"
+34-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:19:19-48
+35            android:theme="@style/Theme.Design.Light.NoActionBar" >
+35-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:20:13-66
+36            <intent-filter>
+36-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:21:13-24:29
+37                <action android:name="android.intent.action.MAIN" />
+37-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:22:17-69
+37-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:22:25-66
+38
+39                <category android:name="android.intent.category.LAUNCHER" />
+39-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:23:17-77
+39-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:23:27-74
+40            </intent-filter>
+41
+42            <meta-data
+42-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:25:13-27:61
+43                android:name="preloaded_fonts"
+43-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:26:17-47
+44                android:resource="@array/preloaded_fonts" />
+44-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:27:17-58
 45        </activity>
 46        <activity
-46-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:31:9-33:20
-47            android:name="com.spkt.app_student_attendance.TeacherActivity"
-47-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:31:19-50
+46-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:29:9-31:20
+47            android:name="com.spkt.app_student_attendance.StudentActivity"
+47-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:29:19-50
 48            android:theme="@style/Theme.Design.Light.NoActionBar" >
-48-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:32:13-66
+48-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:30:13-66
 49        </activity>
-50    </application>
-51
-52</manifest>
+50        <activity
+50-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:32:9-34:20
+51            android:name="com.spkt.app_student_attendance.AdminActivity"
+51-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:32:19-48
+52            android:theme="@style/Theme.Design.Light.NoActionBar" >
+52-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:33:13-66
+53        </activity>
+54        <activity
+54-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:35:9-37:20
+55            android:name="com.spkt.app_student_attendance.TeacherActivity"
+55-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:35:19-50
+56            android:theme="@style/Theme.Design.Light.NoActionBar" >
+56-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:36:13-66
+57        </activity>
+58        <activity
+58-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:38:9-40:20
+59            android:name="com.spkt.app_student_attendance.Forgotpassword"
+59-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:38:19-49
+60            android:theme="@style/Theme.Design.Light.NoActionBar" >
+60-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:39:13-66
+61        </activity>
+62        <activity
+62-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:41:9-43:20
+63            android:name="com.spkt.app_student_attendance.AttendenceStudent"
+63-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:41:19-52
+64            android:theme="@style/Theme.Design.Light.NoActionBar" >
+64-->D:\THANHPHUONG\DEVMOBILE\App_Diemdanh\Code\app\src\main\AndroidManifest.xml:42:13-66
+65        </activity>
+66        <activity
+66-->[com.google.android.gms:play-services-base:11.0.2] C:\Users\thanh\.gradle\caches\transforms-2\files-2.1\cae629500792b1f27df13091d5df4a86\jetified-play-services-base-11.0.2\AndroidManifest.xml:19:9-172
+67            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+67-->[com.google.android.gms:play-services-base:11.0.2] C:\Users\thanh\.gradle\caches\transforms-2\files-2.1\cae629500792b1f27df13091d5df4a86\jetified-play-services-base-11.0.2\AndroidManifest.xml:19:19-85
+68            android:exported="false"
+68-->[com.google.android.gms:play-services-base:11.0.2] C:\Users\thanh\.gradle\caches\transforms-2\files-2.1\cae629500792b1f27df13091d5df4a86\jetified-play-services-base-11.0.2\AndroidManifest.xml:19:146-170
+69            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+69-->[com.google.android.gms:play-services-base:11.0.2] C:\Users\thanh\.gradle\caches\transforms-2\files-2.1\cae629500792b1f27df13091d5df4a86\jetified-play-services-base-11.0.2\AndroidManifest.xml:19:86-145
+70
+71        <meta-data
+71-->[com.google.android.gms:play-services-basement:11.0.2] C:\Users\thanh\.gradle\caches\transforms-2\files-2.1\80c84c917a899494dafa0d85f76579ec\jetified-play-services-basement-11.0.2\AndroidManifest.xml:20:9-121
+72            android:name="com.google.android.gms.version"
+72-->[com.google.android.gms:play-services-basement:11.0.2] C:\Users\thanh\.gradle\caches\transforms-2\files-2.1\80c84c917a899494dafa0d85f76579ec\jetified-play-services-basement-11.0.2\AndroidManifest.xml:20:20-65
+73            android:value="@integer/google_play_services_version" />
+73-->[com.google.android.gms:play-services-basement:11.0.2] C:\Users\thanh\.gradle\caches\transforms-2\files-2.1\80c84c917a899494dafa0d85f76579ec\jetified-play-services-basement-11.0.2\AndroidManifest.xml:20:66-119
+74    </application>
+75
+76</manifest>
