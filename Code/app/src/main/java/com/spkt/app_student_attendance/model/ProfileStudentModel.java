@@ -25,11 +25,10 @@ public class ProfileStudentModel extends AppCompatActivity implements IProfileSt
     private String student_id;
     private IProfileStudentView iProfileStudentView;
     String student_name, student_birth, student_gender, student_mail, student_phone;
-
+    private IPConfigModel ipConfigModel = new IPConfigModel();
     public ProfileStudentModel() {
 
     }
-
     public ProfileStudentModel(String ID, IProfileStudentView iProfileStudentView) {
         this.student_id = ID;
         this.iProfileStudentView = iProfileStudentView;
@@ -47,7 +46,7 @@ public class ProfileStudentModel extends AppCompatActivity implements IProfileSt
 
     @Override
     public void checkInforValidity(String ID, IProfileStudentView context) {
-        String url = "http://192.168.1.13/student_attendence/inforstudent.php";
+        String url = "http://" + ipConfigModel.getIpconfig() + "/student_attendence/inforstudent.php";
         RequestQueue requestQueue = Volley.newRequestQueue((Context) context);
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
@@ -89,7 +88,7 @@ public class ProfileStudentModel extends AppCompatActivity implements IProfileSt
 
     @Override
     public void updateInforStudent(String ID, String student_name, String student_birth, String student_gender, String student_mail, String student_phone, IProfileStudentView iProfileStudentView) {
-        String url = "http://192.168.1.13/student_attendence/updateinforstudent.php";
+        String url = "http://" + ipConfigModel.getIpconfig() + "/student_attendence/updateinforstudent.php";
         RequestQueue requestQueue = Volley.newRequestQueue((Context) iProfileStudentView);
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override

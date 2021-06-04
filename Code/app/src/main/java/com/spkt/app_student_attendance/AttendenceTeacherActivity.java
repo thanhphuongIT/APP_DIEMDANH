@@ -1,32 +1,17 @@
 package com.spkt.app_student_attendance;
 
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.Color;
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.AdapterView;
-import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.Toast;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.budiyev.android.codescanner.CodeScanner;
-import com.budiyev.android.codescanner.CodeScannerView;
-import com.budiyev.android.codescanner.DecodeCallback;
-import com.google.zxing.BarcodeFormat;
-import com.google.zxing.Result;
-import com.google.zxing.WriterException;
-import com.google.zxing.common.BitMatrix;
-import com.google.zxing.qrcode.QRCodeWriter;
+import com.spkt.app_student_attendance.adapter.ClassListAdapterForTeacherActivity;
 import com.spkt.app_student_attendance.model.ClassModel;
 import com.spkt.app_student_attendance.presenter.AttendenceTeacherPresenter;
 import com.spkt.app_student_attendance.presenter.IAttendenceTeacherPresenter;
@@ -39,7 +24,7 @@ public class AttendenceTeacherActivity extends AppCompatActivity implements IAtt
     private ListView listView_class;
     IAttendenceTeacherPresenter attendenceTeacherPresenter = new AttendenceTeacherPresenter(this);
     ArrayList<ClassModel> listClass;
-    ClassListAdapterActivity classListAdapter;
+    ClassListAdapterForTeacherActivity classListAdapter;
     private String teacher_id;
 
     @Override
@@ -76,7 +61,7 @@ public class AttendenceTeacherActivity extends AppCompatActivity implements IAtt
 
     @Override
     public void onListClassResult(ArrayList<ClassModel> List_Class) {
-        classListAdapter = new ClassListAdapterActivity(List_Class);
+        classListAdapter = new ClassListAdapterForTeacherActivity(List_Class);
         listView_class.setAdapter(classListAdapter);
     }
 }

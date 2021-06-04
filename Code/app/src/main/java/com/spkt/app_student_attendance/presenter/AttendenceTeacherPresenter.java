@@ -5,13 +5,12 @@ import android.os.Looper;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.spkt.app_student_attendance.AttendenceTeacherActivity;
 import com.spkt.app_student_attendance.model.ClassModel;
-import com.spkt.app_student_attendance.model.IClass;
+import com.spkt.app_student_attendance.model.IClassModel;
 import com.spkt.app_student_attendance.view.IAttendenceTeacherView;
 
 public class AttendenceTeacherPresenter extends AppCompatActivity implements IAttendenceTeacherPresenter {
-    IClass iClass;
+    IClassModel iClass;
     IAttendenceTeacherView iAttendenceTeacherView;
     Handler handler;
 
@@ -22,6 +21,6 @@ public class AttendenceTeacherPresenter extends AppCompatActivity implements IAt
     @Override
     public void doLoadListClass(String id, IAttendenceTeacherView context) {
         iClass = new ClassModel(id, context);
-        iClass.getDataClassForID(id, context);
+        iClass.getDataClassForIDTeacher(id, context);
     }
 }
