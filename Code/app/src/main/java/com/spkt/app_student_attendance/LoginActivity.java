@@ -12,6 +12,7 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -19,7 +20,11 @@ import com.spkt.app_student_attendance.presenter.ILoginPresenter;
 import com.spkt.app_student_attendance.presenter.LoginPresenter;
 import com.spkt.app_student_attendance.view.ILoginView;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class LoginActivity extends AppCompatActivity implements ILoginView, View.OnClickListener {
+
     private EditText edt_user,edt_password;
     private Button btn_login;
     private TextView btn_text_forgot;
@@ -35,6 +40,7 @@ public class LoginActivity extends AppCompatActivity implements ILoginView, View
         setContentView(R.layout.activity_login);
         sharedPreferences = getSharedPreferences("DataLogin", MODE_PRIVATE);
         mapping();
+
 
         edt_user.setText(sharedPreferences.getString("email",""));
         edt_password.setText(sharedPreferences.getString("password",""));
@@ -52,22 +58,32 @@ public class LoginActivity extends AppCompatActivity implements ILoginView, View
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.btn_login:
-                //btn_login.setEnabled(false);
-                loginPresenter.doLogin(edt_user.getText().toString().trim(), edt_password.getText().toString().trim(),this);
-                break;
+                if(CheckLogin()==1){
+                    Toast.makeText(this, "Username hoặc Password trống ! Vui lòng nhập lại", Toast.LENGTH_SHORT).show();
+                    break;
+                }
+                else if(CheckLogin()==2){
+                    Toast.makeText(this, "Username chứa kí tự đặc biệt ! Vui lòng nhập lại", Toast.LENGTH_SHORT).show();
+                    break;
+                } else {
+                    loginPresenter.doLogin(edt_user.getText().toString().trim(), edt_password.getText().toString().trim(), this);
+                    break;
+                }
             case R.id.btn_text_forgot:
-                startActivity(new Intent(LoginActivity.this, ForgotPasswordActivity.class));
+                startActivity(new Intent(LoginActivity.this, ForgotPassActivity.class));
                 break;
-            case R.id.ic_eye:
+            case R.id.ic_eye_new:
                if(ic_eye.getDrawable().getConstantState().equals(getResources().getDrawable(R.drawable.eye).getConstantState()))
                {
                    ic_eye.setImageResource(R.drawable.eye_closed);
                    edt_password.setTransformationMethod(PasswordTransformationMethod.getInstance());
+                   break;
                }
                else
                {
                    ic_eye.setImageResource(R.drawable.eye);
                    edt_password.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+                   break;
                }
         }
     }
@@ -105,7 +121,7 @@ public class LoginActivity extends AppCompatActivity implements ILoginView, View
         btn_login = (Button) findViewById(R.id.btn_login);
         btn_text_forgot = (TextView) findViewById(R.id.btn_text_forgot);
         cb_remeberme = (CheckBox) findViewById(R.id.cb_remeberme);
-        ic_eye = (ImageView) findViewById(R.id.ic_eye);
+        ic_eye = (ImageView) findViewById(R.id.ic_eye_new);
     }
 
     protected void handlePreferences() {
@@ -124,6 +140,19 @@ public class LoginActivity extends AppCompatActivity implements ILoginView, View
             editor.apply();
         }
     }
+    public int CheckLogin() {
+        String username = edt_user.getText().toString().trim();
+        String password = edt_password.getText().toString().trim();
+        Pattern pattern = Pattern.compile("[^A-Za-z0-9]", Pattern.CASE_INSENSITIVE);
+        Matcher matcher = pattern.matcher(username);
+        boolean b = matcher.find();
 
+        if (username.equals("") || password.equals(""))
+            return 1;
+        else if (b == true)
+            return 2;
+        else
+            return 0;
+    }
 
 }

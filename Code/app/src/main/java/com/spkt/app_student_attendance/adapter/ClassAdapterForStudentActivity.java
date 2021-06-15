@@ -1,21 +1,35 @@
 package com.spkt.app_student_attendance.adapter;
 import android.view.View;
 import android.view.ViewGroup;
+import android.content.Context;
 import android.widget.BaseAdapter;
+import android.widget.Filter;
+import android.widget.Filterable;
 import android.widget.TextView;
 
 import com.spkt.app_student_attendance.R;
 import com.spkt.app_student_attendance.model.ClassModel;
 
 import java.util.ArrayList;
+import java.util.List;
 
-public class ClassAdapterForStudentActivity extends BaseAdapter  {
+public class ClassAdapterForStudentActivity extends BaseAdapter implements Filterable {
+    private Context context;
+    private List<ClassModel> listClassS;
+    private List<ClassModel> listClassSOld;
     // Dữ liệu
     final ArrayList<ClassModel> LissClass;
-
     public ClassAdapterForStudentActivity(ArrayList<ClassModel> lissClass) {
         this.LissClass = lissClass;
     }
+    public ClassAdapterForStudentActivity(Context context, ArrayList<ClassModel> lissClass) {
+        this.context = context;
+        this.listClassS = lissClass;
+        this.listClassSOld = lissClass;
+        this.LissClass = lissClass;
+    }
+
+
     @Override
     public int getCount() {
         //Trả về tổng số phần tử, nó được gọi bởi ListView
@@ -47,5 +61,37 @@ public class ClassAdapterForStudentActivity extends BaseAdapter  {
         ((TextView) viewClass.findViewById(R.id.text_name_class)).setText(String.format(class_list.getClass_name()));
         ((TextView) viewClass.findViewById(R.id.text_id_class)).setText(String.format(class_list.getClass_id()));
         return viewClass;
+    }
+
+    @Override
+    public Filter getFilter() {
+        return new Filter() {
+            @Override
+            protected FilterResults performFiltering(CharSequence constraint) {
+                String strSearch  = constraint.toString();
+                if(strSearch.isEmpty()){
+                    listClassS = listClassSOld;
+                }else{
+                    List<ClassModel> list = new ArrayList<>();
+                    for(ClassModel classS: listClassSOld){
+                        //Chuyen doi tat ca thanh chu thuong
+                        if(classS.getClass_name().toLowerCase().contains(strSearch.toLowerCase())){
+                            list.add(classS);
+                        }
+                    }
+                    listClassS = list;
+                }
+                FilterResults filterResults = new FilterResults();
+                filterResults.values = listClassS;
+
+                return filterResults;
+            }
+
+            @Override
+            protected void publishResults(CharSequence constraint, FilterResults results) {
+                listClassS = (List<ClassModel>) results.values;
+                notifyDataSetChanged();
+            }
+        };
     }
 }

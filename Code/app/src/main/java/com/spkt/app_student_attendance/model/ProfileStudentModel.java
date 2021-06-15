@@ -24,23 +24,22 @@ import java.util.Map;
 public class ProfileStudentModel extends AppCompatActivity implements IProfileStudentModel {
     private String student_id;
     private IProfileStudentView iProfileStudentView;
-    String student_name, student_birth, student_gender, student_mail, student_phone;
+    String student_name, student_birth, student_gender, student_mail, student_phone, student_hinhanh;
     private IPConfigModel ipConfigModel = new IPConfigModel();
-    public ProfileStudentModel() {
 
-    }
     public ProfileStudentModel(String ID, IProfileStudentView iProfileStudentView) {
         this.student_id = ID;
         this.iProfileStudentView = iProfileStudentView;
     }
 
-    public ProfileStudentModel(String student_id, String student_name, String student_birth, String student_gender, String student_mail, String student_phone, IProfileStudentView iProfileStudentView) {
+    public ProfileStudentModel(String student_id, String student_name, String student_birth, String student_gender, String student_mail, String student_phone, String hinhanh, IProfileStudentView iProfileStudentView) {
         this.student_id = student_id;
         this.student_name = student_name;
         this.student_birth = student_birth;
         this.student_gender = student_gender;
         this.student_mail = student_mail;
         this.student_phone = student_phone;
+        this.student_hinhanh = hinhanh;
         this.iProfileStudentView = iProfileStudentView;
     }
 
@@ -61,7 +60,8 @@ public class ProfileStudentModel extends AppCompatActivity implements IProfileSt
                                     object.getString("student_birth").trim(),
                                     object.getString("student_gender").trim(),
                                     object.getString("student_mail").trim(),
-                                    object.getString("student_phone").trim());
+                                    object.getString("student_phone").trim(),
+                                    object.getString("student_image").trim());
                         }
                     } catch (JSONException e) {
                         e.printStackTrace();
@@ -87,7 +87,7 @@ public class ProfileStudentModel extends AppCompatActivity implements IProfileSt
     }
 
     @Override
-    public void updateInforStudent(String ID, String student_name, String student_birth, String student_gender, String student_mail, String student_phone, IProfileStudentView iProfileStudentView) {
+    public void updateInforStudent(String ID, String student_name, String student_birth, String student_gender, String student_mail, String student_phone, String student_image, IProfileStudentView iProfileStudentView) {
         String url = "http://" + ipConfigModel.getIpconfig() + "/student_attendence/updateinforstudent.php";
         RequestQueue requestQueue = Volley.newRequestQueue((Context) iProfileStudentView);
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
@@ -124,6 +124,46 @@ public class ProfileStudentModel extends AppCompatActivity implements IProfileSt
                 params.put("student_gender", student_gender);
                 params.put("student_mail", student_mail);
                 params.put("student_phone", student_phone);
+                params.put("student_image", student_image);
+                return params;
+            }
+        };
+        requestQueue.add(stringRequest);
+    }
+
+    @Override
+    public void checkInforValidityMain(String id, IProfileStudentView iProfileStudentView) {
+        String url = "http://" + ipConfigModel.getIpconfig() + "/student_attendence/inforstudent.php";
+        RequestQueue requestQueue = Volley.newRequestQueue((Context) iProfileStudentView);
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                if (response.equals("Error")) {
+                } else {
+                    try {
+                        JSONObject object = new JSONObject(response);
+                        if ((object.getString("student_id").trim()).equals(id)) {
+                            iProfileStudentView.showInforStudentMain(object.getString("student_id").trim(),
+                                    object.getString("student_name").trim(),
+                                    object.getString("student_image").trim());
+                        }
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Toast.makeText((Context) iProfileStudentView, error.toString().trim(), Toast.LENGTH_SHORT).show();
+            }
+        }) {
+            @Nullable
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                Map<String, String> params = new HashMap<>();
+                // params.put("type","login");
+                params.put("student_id", student_id);
                 return params;
             }
         };

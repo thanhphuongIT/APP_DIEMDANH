@@ -71,6 +71,7 @@ public class UserModelModel extends AppCompatActivity implements IUserModel {
             @Override
             public void onResponse(String response) {
                 if (response.equals("Error")) {
+                    Toast.makeText((Context) loginView, "Acount is Error, Please check info again !", Toast.LENGTH_LONG).show();
                 } else {
                     try {
                         JSONObject object = new JSONObject(response);
@@ -113,5 +114,6 @@ public class UserModelModel extends AppCompatActivity implements IUserModel {
     public void setPassword(String password) {
         this.password = password;
     }
+
 }
 

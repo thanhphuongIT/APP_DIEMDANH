@@ -25,4 +25,6 @@ public class LoginPresenter extends AppCompatActivity implements ILoginPresenter
         initUser(user,password, loginView);
         userlogin.checkUserValidity(loginView);
     }
+
+
 }

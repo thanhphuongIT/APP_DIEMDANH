@@ -66,6 +66,7 @@ public class PresentStudentModel extends AppCompatActivity implements IPresentSt
             @Override
             public void onResponse(String response) {
                 if (response.equals("Error")) {
+                    Toast.makeText((Context) iPresentTimeStudentView, "List is Empty ! Nobody attendanced !  ", Toast.LENGTH_LONG).show();
                 } else {
                     try {
                         ArrayList<PresentStudentModel> ListTimePresent = new ArrayList<PresentStudentModel>();

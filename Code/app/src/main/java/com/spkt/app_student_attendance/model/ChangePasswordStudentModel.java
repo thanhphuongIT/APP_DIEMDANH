@@ -48,12 +48,7 @@ public class ChangePasswordStudentModel extends AppCompatActivity implements ICh
                     iChangePasswordStudentView.ChangeResult(checkresult);
 
                 } else {
-                    try {
-                        JSONObject object = new JSONObject(response);
                         iChangePasswordStudentView.ChangeResult(checkresult);
-                    } catch (JSONException e) {
-                        e.printStackTrace();
-                    }
                 }
             }
         }, new Response.ErrorListener() {

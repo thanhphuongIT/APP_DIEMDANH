@@ -1,5 +1,6 @@
 package com.spkt.app_student_attendance.adapter;
 
+import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -12,6 +13,7 @@ import java.util.ArrayList;
 
 public class ClassListAdapterForTeacherActivity extends BaseAdapter {
     // Dữ liệu
+    private Context context;
     final ArrayList<ClassModel> LissClass;
 
     public ClassListAdapterForTeacherActivity(ArrayList<ClassModel> lissClass) {

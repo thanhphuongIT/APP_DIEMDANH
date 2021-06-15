@@ -6,6 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:background="#E5E5E5">
 
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
@@ -40,7 +41,7 @@
             tools:ignore="MissingConstraints" />
 
         <Button
-            android:id="@+id/btn_information_student"
+            android:id="@+id/btn_information_teacher"
             android:layout_width="107dp"
             android:layout_height="98dp"
             android:layout_marginStart="24dp"
@@ -50,10 +51,10 @@
             app:backgroundTintMode="screen"
             app:iconTint="#000000"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button10" />
+            app:layout_constraintTop_toBottomOf="@id/btn_schedule_teacher" />
 
         <Button
-            android:id="@+id/button14"
+            android:id="@+id/btn_classlist_teacher"
             android:layout_width="107dp"
             android:layout_height="98dp"
             android:layout_marginTop="20dp"
@@ -77,28 +78,17 @@
             app:layout_constraintTop_toBottomOf="@+id/btn_attendence_teacher" />
 
         <Button
-            android:id="@+id/button17"
+            android:id="@+id/btn_present_teacher"
             android:layout_width="107dp"
             android:layout_height="98dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/statistical"
-            app:backgroundTint="#00FFFFFF"
-            app:backgroundTintMode="screen"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btn_information_student" />
-
-        <Button
-            android:id="@+id/button18"
-            android:layout_width="107dp"
-            android:layout_height="98dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="28dp"
             android:background="@drawable/present"
             app:backgroundTint="#00FFFFFF"
             app:backgroundTintMode="screen"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.095"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button14" />
+            app:layout_constraintTop_toBottomOf="@+id/btn_information_teacher" />
 
         <Button
             android:id="@+id/button11"
@@ -125,7 +115,7 @@
             app:layout_constraintTop_toBottomOf="@+id/imageView10" />
 
         <Button
-            android:id="@+id/button10"
+            android:id="@+id/btn_schedule_teacher"
             android:layout_width="107dp"
             android:layout_height="98dp"
             android:layout_marginStart="24dp"
@@ -138,15 +128,31 @@
             tools:ignore="MissingConstraints" />
 
         <Button
-            android:id="@+id/button18"
+            android:id="@+id/btn_absent_teacher"
             android:layout_width="107dp"
             android:layout_height="98dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="24dp"
+            android:layout_marginTop="28dp"
             android:background="@drawable/absent"
+            app:backgroundTint="#00FFFFFF"
+
+            app:backgroundTintMode="screen"
+            app:layout_constraintEnd_toEndOf="@+id/btn_about"
+            app:layout_constraintHorizontal_bias="0.542"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_classlist_teacher"
+            tools:ignore="DuplicateIds" />
+
+        <Button
+            android:id="@+id/btn_about"
+            android:layout_width="107dp"
+            android:layout_height="98dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/about_icon"
             app:backgroundTint="#00FFFFFF"
             app:backgroundTintMode="screen"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintTop_toBottomOf="@+id/button15"
             tools:ignore="DuplicateIds" />
 
@@ -192,60 +198,60 @@
             app:layout_constraintStart_toStartOf="@+id/imageView12"
             tools:ignore="DuplicateIds,MissingConstraints" />
 
-        <ImageView
+        <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/imageView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            app:layout_constraintEnd_toEndOf="@+id/imageView10"
-            app:layout_constraintHorizontal_bias="0.081"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="13dp"
+            android:src="@drawable/home"
             app:layout_constraintStart_toStartOf="@+id/imageView10"
             app:layout_constraintTop_toTopOf="@+id/imageView10"
             app:srcCompat="@drawable/persion_bg" />
 
-        <ImageView
+        <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/imageView7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            app:layout_constraintEnd_toEndOf="@+id/imageView10"
-            app:layout_constraintHorizontal_bias="0.295"
-            app:layout_constraintStart_toStartOf="@+id/imageView10"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/messing"
+            app:layout_constraintStart_toEndOf="@+id/imageView5"
             app:layout_constraintTop_toTopOf="@+id/imageView10"
             app:srcCompat="@drawable/persion_bg" />
 
-        <ImageView
+        <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/imageView11"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            app:layout_constraintEnd_toEndOf="@+id/imageView10"
-            app:layout_constraintStart_toStartOf="@+id/imageView10"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="13dp"
+            android:src="@drawable/information_ic"
+            app:layout_constraintStart_toEndOf="@+id/imageView7"
             app:layout_constraintTop_toTopOf="@+id/imageView10"
             app:srcCompat="@drawable/persion_bg" />
 
-        <ImageView
+        <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/imageView14"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            app:layout_constraintEnd_toEndOf="@+id/imageView10"
-            app:layout_constraintHorizontal_bias="0.724"
-            app:layout_constraintStart_toStartOf="@+id/imageView10"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/setting"
+            app:layout_constraintStart_toEndOf="@+id/imageView11"
             app:layout_constraintTop_toTopOf="@+id/imageView10"
             app:srcCompat="@drawable/persion_bg" />
 
-        <ImageView
-            android:id="@+id/imageView15"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            app:layout_constraintEnd_toEndOf="@+id/imageView10"
-            app:layout_constraintHorizontal_bias="0.918"
-            app:layout_constraintStart_toStartOf="@+id/imageView10"
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_logout"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/logout"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/imageView10"
             app:srcCompat="@drawable/persion_bg" />
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -288,7 +294,7 @@
         tools:ignore="DuplicateIds" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/fullnam_main_teacher"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
@@ -300,20 +306,22 @@
         app:layout_constraintTop_toTopOf="@+id/imageView8" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/Number_ID_main_teacher"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
         android:layout_marginLeft="80dp"
         android:layout_marginTop="45dp"
+        android:fontFamily="@font/poppins"
         android:text="Teacher Number"
         app:layout_constraintStart_toStartOf="@+id/imageView8"
         app:layout_constraintTop_toTopOf="@+id/imageView8" />
 
-    <ImageView
-        android:id="@+id/imageView4"
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_avatar_main_teacher"
         android:layout_width="60dp"
         android:layout_height="57dp"
+        android:src="@drawable/persion_bg"
         android:layout_marginStart="15dp"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="88dp"

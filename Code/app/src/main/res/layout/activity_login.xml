@@ -8,7 +8,7 @@
 
 
     <TextView
-        android:id="@+id/textview"
+        android:id="@+id/textview012"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
@@ -136,7 +136,7 @@
         app:layout_constraintTop_toBottomOf="@+id/edt_password" />
 
     <ImageView
-        android:id="@+id/ic_eye"
+        android:id="@+id/ic_eye_new"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:scaleType="fitXY"

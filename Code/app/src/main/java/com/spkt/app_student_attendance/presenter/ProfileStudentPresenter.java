@@ -26,11 +26,16 @@ public class ProfileStudentPresenter extends AppCompatActivity implements IProfi
         iProfileStudentModel = new ProfileStudentModel(ID,iProfileStudentView);
         iProfileStudentModel.checkInforValidity(ID, iProfileStudentView);
     }
+    @Override
+    public void getIDMainStudent(String ID, IProfileStudentView iProfileStudentView) {
+        iProfileStudentModel = new ProfileStudentModel(ID,iProfileStudentView);
+        iProfileStudentModel.checkInforValidityMain(ID, iProfileStudentView);
+    }
 
-    public void checkUpdate (String student_id, String student_name,String student_birth,String student_gender,String student_mail,String student_phone, IProfileStudentView iProfileStudentView)
+    public void checkUpdate (String student_id, String student_name,String student_birth,String student_gender,String student_mail,String student_phone, String hinhanh, IProfileStudentView iProfileStudentView)
     {
-        iProfileStudentModel = new ProfileStudentModel(student_id, student_name, student_birth, student_gender, student_mail, student_phone, iProfileStudentView);
-        iProfileStudentModel.updateInforStudent(student_id, student_name, student_birth, student_gender, student_mail, student_phone, iProfileStudentView);
+        iProfileStudentModel = new ProfileStudentModel(student_id, student_name, student_birth, student_gender, student_mail, student_phone, hinhanh, iProfileStudentView);
+        iProfileStudentModel.updateInforStudent(student_id, student_name, student_birth, student_gender, student_mail, student_phone, hinhanh, iProfileStudentView);
     }
 
 
